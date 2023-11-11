@@ -1,0 +1,11 @@
+<Classes>
+	<Class DisplayName="Blue" RealName="blue" />
+	<Class DisplayName="Yellow" RealName="yellow" />
+	<Class DisplayName="Violet" RealName="violet" />
+	<Class DisplayName="RedGrey" RealName="redGrey" />
+	<Class DisplayName="Purple" RealName="purple" />
+	<Class DisplayName="Grey" RealName="grey" />
+	<Class DisplayName="Green" RealName="green" />
+	<Class DisplayName="Dark" RealName="dark" />
+	<Class DisplayName="Brown" RealName="brown" />
+</Classes>

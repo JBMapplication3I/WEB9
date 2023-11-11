@@ -1,0 +1,27 @@
+﻿UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '2' WHERE [RotatorTypeID] = 1;
+GO
+UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] SET [ScriptVersion] = '1.4' WHERE [RotatorTypeID] = 10;
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]') AND type in (N'P', N'PC'))
+BEGIN
+EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridgeIU]
+	@ArticleID INT,
+	@RotatorID INT,
+	@ArticleImage NVARCHAR(250),
+	@Flag TINYINT,
+	@ImageSizes XML = NULL
+AS
+SET NOCOUNT ON;
+IF EXISTS (SELECT 1 FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] WHERE ArticleID = @ArticleID AND RotatorID = @RotatorID)
+	UPDATE {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] SET ArticleImage = @ArticleImage, Flag=@Flag, DateAccessed=GETUTCDATE(),ImageSizes = @ImageSizes WHERE ArticleID = @ArticleID AND RotatorID = @RotatorID;
+ELSE
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorNewsBridge] (ArticleID,RotatorID,ArticleImage,Flag,DateAccessed,ImageSizes) VALUES (@ArticleID,@RotatorID,@ArticleImage,@Flag,GETUTCDATE(),@ImageSizes);' 
+END
+GO

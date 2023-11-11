@@ -1,0 +1,5 @@
+﻿IF NOT EXISTS (SELECT UpdateVersion FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] WHERE UpdateVersion = '10.01.00')
+BEGIN
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]([UpdateVersion],[Finished],[InstallType]) VALUES(N'10.01.00',0,'DNN')
+END
+GO

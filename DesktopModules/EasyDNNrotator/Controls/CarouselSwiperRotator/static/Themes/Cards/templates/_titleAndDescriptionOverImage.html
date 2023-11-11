@@ -1,0 +1,27 @@
+<!--HeaderTemplateBegin-->
+<div class="swiper-wrapper">
+	<!--HeaderTemplateEnd-->
+
+	<!--ItemTemplateBegin-->
+	<div class="swiper-slide" data-item-index="[EasyDNNrotator:MediaCounter]">
+		<img class="edSR_image" src="[EasyDNNrotator:ItemThumbnail]" alt="[EasyDNNrotator:ImageAltData]">
+		<div class="edSR_titleDescOver">
+			[EasyDNNrotator:IfExists:ItemTitle]<h4 class="edSR_itemTitle edSR_overlayWrapper"><span class="edSR_overlayItem">[EasyDNNrotator:ItemTitle]</span></h4>[EasyDNNrotator:EndIf:ItemTitle]
+			[EasyDNNrotator:IfExists:ItemDescription]<div class="edSR_itemDescription edSR_overlayWrapper"><div class="edSR_overlayItem">[EasyDNNrotator:ItemDescription]</div></div>[EasyDNNrotator:EndIf:ItemDescription]
+		</div>
+		[EasyDNNrotator:IfExists:ItemLink]<a class="edSR_link" href="[EasyDNNrotator:ItemLink]" title="[EasyDNNrotator:ItemTitle]">[EasyDNNrotator:LocalizedText:Readmore]</a>[EasyDNNrotator:EndIf:ItemLink]
+	</div>
+	<!--ItemTemplateEnd-->
+
+	<!--PagingTemplateBegin-->
+	<div class="swiper-pagination"></div>
+	<!--PagingTemplateEnd-->
+
+	<!--NavigationTemplateBegin-->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	<!--NavigationTemplateEnd-->
+
+	<!--FooterTemplateBegin-->
+</div>
+<!--FooterTemplateEnd-->

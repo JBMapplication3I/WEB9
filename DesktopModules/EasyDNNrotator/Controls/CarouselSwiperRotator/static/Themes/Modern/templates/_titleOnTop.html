@@ -1,0 +1,26 @@
+<!--HeaderTemplateBegin-->
+<div class="swiper-wrapper">
+	<!--HeaderTemplateEnd-->
+
+	<!--ItemTemplateBegin-->
+	<div class="swiper-slide" data-item-index="[EDG:MediaCounter]">
+		[EasyDNNrotator:IfExists:ItemTitle]<h4 class="edSR_itemTitle" style="max-width:[EasyDNNrotator:ItemThumbWidth]px">[EasyDNNrotator:ItemTitle]</h4>[EasyDNNrotator:EndIf:ItemTitle]
+		<img class="edSR_image" src="[EasyDNNrotator:ItemThumbnail]" alt="[EasyDNNrotator:ImageAltData]">
+		[EasyDNNrotator:IfExists:ItemDescription]<div class="edSR_itemDescription" style="max-width:[EasyDNNrotator:ItemThumbWidth]px">[EasyDNNrotator:ItemDescription]</div>[EasyDNNrotator:EndIf:ItemDescription]
+		[EasyDNNrotator:IfExists:ItemLink]<a class="edSR_link" href="[EasyDNNrotator:ItemLink]" title="[EasyDNNrotator:ItemTitle]">[EasyDNNrotator:LocalizedText:Readmore]</a>[EasyDNNrotator:EndIf:ItemLink]
+		[EasyDNNrotator:IfExists:ItemLink]<a class="edSR_linkButton" href="[EasyDNNrotator:ItemLink]" title="[EasyDNNrotator:ItemTitle]">[EasyDNNrotator:LocalizedText:Readmore]</a>[EasyDNNrotator:EndIf:ItemLink]
+	</div>
+	<!--ItemTemplateEnd-->
+
+	<!--PagingTemplateBegin-->
+	<div class="swiper-pagination"></div>
+	<!--PagingTemplateEnd-->
+
+	<!--NavigationTemplateBegin-->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	<!--NavigationTemplateEnd-->
+
+	<!--FooterTemplateBegin-->
+</div>
+<!--FooterTemplateEnd-->

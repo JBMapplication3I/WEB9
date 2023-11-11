@@ -1,0 +1,23 @@
+
+@media only screen and (max-width: 767px) {
+    .homepage-about-us-section {
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+    .homepage-about-us-section .homepage-about-us-bg-img {
+        min-height: 500px;
+        width: 100% !important;
+    }
+    .homepage-about-us-section .homepage-about-us-text {
+        width: 100% !important;
+    }
+}
+
+label.control-label.af-slide.required:after {
+
+content: '*';
+
+color: red;
+
+}
+

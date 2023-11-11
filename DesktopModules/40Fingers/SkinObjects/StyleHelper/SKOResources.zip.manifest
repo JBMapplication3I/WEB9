@@ -1,0 +1,20 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>40Fingers_StyleHelper.dnn</name>
+    </file>
+    <file>
+      <path>Documentation/</path>
+      <name>IE11 detection.txt</name>
+    </file>
+    <file>
+      <path />
+      <name>StyleHelper.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>StyleHelper.ascx.vb</name>
+    </file>
+  </files>
+</dotnetnuke>

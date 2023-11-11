@@ -1,0 +1,64 @@
+﻿<!--HeaderTemplateBegin-->
+
+<!--HeaderTemplateEnd-->
+
+<!--ItemTemplateBegin-->
+	<div class="ms-slide" [EasyDNNrotator:SlideDelay]>
+		[EasyDNNrotator:IfExists:ContentType:Image]
+		<img src="[EasyDNNrotator:Thumb]" data-src="[EasyDNNrotator:Thumb]" alt="[EasyDNNrotator:Title]" class="ms-thumb" [EasyDNNrotator:ResponsiveImages] />
+		[EasyDNNrotator:EndIf:ContentType:Image]
+
+		[EasyDNNrotator:IfExists:ContentType:Video]
+			[EasyDNNrotator:VideoSource]
+		[EasyDNNrotator:EndIf:ContentType:Video]
+
+		[EasyDNNrotator:IfExists:Title]
+		<h2 style="font-size:50px"
+			class="ms-layer edsms_slideTitle"
+			data-type="text"
+			data-origin="ml"
+			data-effect="left(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-offset-x="100"
+			data-offset-y="0"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Title]
+		</h2>
+		[EasyDNNrotator:EndIf:Title]
+		[EasyDNNrotator:IfExists:Description]
+		<div style="font-size:20px;color:#fff"
+			class="ms-layer edsms_slideDescription"
+			data-type="text"
+			data-origin="bl"
+			data-effect="right(long)"
+			data-duration="1500"
+			data-delay="0"
+			data-offset-x="100"
+			data-offset-y="180"
+			data-ease="easeInOutBack">
+			[EasyDNNrotator:Description]
+		</div>
+		[EasyDNNrotator:EndIf:Description]
+	</div>
+<!--ItemTemplateEnd-->
+
+<!--FooterTemplateBegin-->
+
+<!--FooterTemplateEnd-->
+
+<!--ScriptBegin-->
+
+	<!--EnabledOptionsBegin-->
+	[autoplay,fullscreen,speed,space,view,swipe,mouseswipe,overPause,wheel,showtitle,showdescription,limittitle,limitdescription,stripdescription,grabCursor,preload]
+	<!--EnabledOptionsEnd-->
+	<!--SetOptionsBegin-->
+	<!--SetOptionsEnd-->
+	<!--HiddenOptionsBegin-->
+	<!--HiddenOptionsEnd-->
+	<!--ControlBegin-->
+		slider.control('timebar');
+		slider.control('bullets');
+	<!--ControlEnd-->
+
+<!--ScriptEnd-->

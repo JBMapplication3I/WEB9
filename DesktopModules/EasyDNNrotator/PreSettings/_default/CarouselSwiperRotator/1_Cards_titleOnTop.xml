@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+	<MainSettings>
+		<SettingsName>Cards - title on top</SettingsName>
+		<PictureW>400</PictureW>
+		<PictureH>300</PictureH>
+		<NumToRotate>20</NumToRotate>
+		<ControlName>CarouselSwiperRotator.ascx</ControlName>
+		<ThemeName>Cards.css</ThemeName>
+		<CssClass>0</CssClass>
+		<HtmTemplate>_titleOnTop.html</HtmTemplate>
+		<Randomize>False</Randomize>
+		<GlobalJpegQuality>97</GlobalJpegQuality>
+		<ImageUrl>PreSettings/_default/CarouselSwiperRotator/images/Cards_titleOnTop.png</ImageUrl>
+	</MainSettings>
+	<RotatorSettings>
+		<DisplayTitle>True</DisplayTitle>
+		<ItemTitleLimit>0</ItemTitleLimit>
+		<DisplayDescription>True</DisplayDescription>
+		<ItemDescriptionLimit>1000</ItemDescriptionLimit>
+		<AutoSlidesPerView>False</AutoSlidesPerView>
+		<SlidesPerView>3</SlidesPerView>
+		<Autoplay>True</Autoplay>
+		<AutoplayDelay>5000</AutoplayDelay>
+		<TransitionSpeed>300</TransitionSpeed>
+		<SpaceBetweenSlides>10</SpaceBetweenSlides>
+		<SlidesPerColumn>1</SlidesPerColumn>
+		<IsPaginationEnabled>True</IsPaginationEnabled>
+		<PaginationType>2</PaginationType>
+		<IsNavigationEnabled>True</IsNavigationEnabled>
+	</RotatorSettings>
+</Settings>

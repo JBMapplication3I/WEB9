@@ -1,0 +1,7 @@
+﻿[datetimeflatpickr] ~ input.form-control[readonly] {
+    background-color: #fff;
+}
+
+[datetimeflatpickr] ~ input.form-control[disabled] {
+    background-color: #eee;
+}

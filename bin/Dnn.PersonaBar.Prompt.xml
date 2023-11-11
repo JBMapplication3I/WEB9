@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.PersonaBar.Prompt</name>
+    </assembly>
+    <members>
+        <member name="T:Dnn.PersonaBar.Prompt.Components.Commands.Portal.GetSite">
+            <summary>
+            alias for get-portal
+            </summary>
+        </member>
+        <member name="T:Dnn.PersonaBar.Prompt.Components.Commands.Portal.ListSites">
+            <summary>
+            Alias for list-portals
+            </summary>
+        </member>
+        <member name="P:Dnn.PersonaBar.Prompt.Components.Models.CommandOption.Flag">
+            <summary>
+            Name of the flag
+            </summary>
+        </member>
+        <member name="P:Dnn.PersonaBar.Prompt.Components.Models.CommandOption.Type">
+            <summary>
+            Type of the flag value expected.
+            </summary>
+        </member>
+        <member name="P:Dnn.PersonaBar.Prompt.Components.Models.CommandOption.Required">
+            <summary>
+            Is flag required or not
+            </summary>
+        </member>
+        <member name="P:Dnn.PersonaBar.Prompt.Components.Models.CommandOption.DefaultValue">
+            <summary>
+            Default value of the flag
+            </summary>
+        </member>
+        <member name="P:Dnn.PersonaBar.Prompt.Components.Models.CommandOption.Description">
+            <summary>
+            Description of flag
+            </summary>
+        </member>
+        <member name="T:Dnn.PersonaBar.Prompt.Components.Models.ModuleInstanceModel">
+            <summary>
+            Similar to ModuleInfoModel, however this one has information more specific to a module's 
+            implementation on a particular page (like the PaneName)
+            </summary>
+        </member>
+        <member name="T:Dnn.PersonaBar.Prompt.Components.Repositories.ICommandRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Dnn.PersonaBar.Prompt.Services.CommandController.AddLogAndReturnResponse(Dnn.PersonaBar.Library.Prompt.IConsoleCommand,System.Type,Dnn.PersonaBar.Prompt.Components.Models.CommandInputModel,System.DateTime,System.String)">
+            <summary>
+            Log every command run by a users.
+            </summary>
+            <param name="consoleCommand"></param>
+            <param name="cmdTypeToRun"></param>
+            <param name="command"></param>
+            <param name="startTime"></param>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+﻿IF NOT EXISTS (SELECT UpdateVersion FROM {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate] WHERE UpdateVersion = '10.09.00')
+BEGIN
+	INSERT INTO {databaseOwner}[{objectQualifier}EasyDNNRotatorUpdate]([UpdateVersion],[Finished],[InstallType]) VALUES(N'10.09.00',0,'DNN')
+END
+GO
+
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.columns WHERE table_name = '{objectQualifier}EasyDNNRotatorModule' AND column_name = 'CropResizeMode')
+BEGIN
+	ALTER TABLE {databaseOwner}[{objectQualifier}EasyDNNRotatorModule] ADD CropResizeMode INT CONSTRAINT {objectQualifier}DF_EasyDNNRotatorModule_CropResizeMode DEFAULT(0) NOT NULL
+END
+GO

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dnn.PersonaBar.Connectors</name>
+    </assembly>
+    <members>
+        <member name="M:Dnn.PersonaBar.Connectors.Services.ConnectorsController.DeleteConnection(System.Object)">
+            <summary>
+            Delete a connector. Supported only for connectors with SupportsMultiple=true.
+            </summary>
+            <param name="postData"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

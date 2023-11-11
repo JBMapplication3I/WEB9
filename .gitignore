@@ -1,0 +1,77 @@
+/.vs
+/App_Data/51Degrees.dat
+/App_Data/ClientDependency
+/App_Data/_imagecache
+/App_Data/Search
+/App_Data/resizer_key*.txt
+/obj
+/Portals/*/Cache
+/Portals/*/Logs
+/Portals/*/SearchBoost
+/Portals/*/Images
+/Portals/*/EasyGalleryImages
+/Portals/*/EasyDNNNews
+/Portals/_default/Skins/*/css/node_modules
+!/Portals/_default/Skins/*/css/node_modules/angular-bootstrap-toggle
+/Portals/_default/Skins/*/Ecommerce/framework/configurations
+/Portals/_default/Skins/*/bin
+/Portals/_default/Skins/*/obj
+/Portals/_default/Skins/*/rewrite.outboundRules.config
+/Portals/_default/Skins/*/rewrite.rewriteMaps.config
+/Portals/_default/Skins/*/rewrite.rules.config
+/images/*/[Ii]mages
+/images/*/[Ii]mport
+/images/*/[Dd]ocuments
+/images/*/StoredFiles
+/_ReSharper.Caches
+/imagecache
+web.connectionStrings.config
+rewrite.config
+*.user
+
+# Compiled source #
+###################
+*.com
+*.class
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#resources and misc
+*.resources
+*.cfs
+*.del
+*.tmp
+/bin/mailSettings.config
+/Portals/_default/Skins/Clarity
+/Portals/_default/Skins/Clarity-Admin
+/Portals/_default/Skins/SALES
